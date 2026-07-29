@@ -39,9 +39,10 @@ const SellActionWindow = ({ uid, maxQty, defaultPrice, defaultProduct }) => {
                 price: Number(stockPrice),
                 mode: "SELL",
                 product,
-                withCredentials: true
-            });
-
+            },
+ {
+     withCredentials: true
+  });
             triggerRefresh();
             closeSellWindow();
         } catch (err) {
