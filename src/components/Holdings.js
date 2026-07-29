@@ -11,7 +11,7 @@ const Holdings = () => {
 
   useEffect(() => {
     axios
-      .get(`${API_URL}/allHoldings`)
+      .get(`${API_URL}/allHoldings`,{withCredentials: true})
       .then((res) => {
         setAllHoldings(res.data);
       })
