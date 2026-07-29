@@ -10,7 +10,7 @@ const Positions = () => {
 
   useEffect(() => {
     axios
-      .get(`${API_URL}/allpositions`)
+      .get(`${API_URL}/allpositions`,{withCredentials: true})
       .then((res) => {
         setAllPositions(res.data);
       })
