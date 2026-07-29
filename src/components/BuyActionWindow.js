@@ -22,7 +22,6 @@ const BuyActionWindow = ({ uid }) => {
         mode: "BUY",
         product,
       },
-      ,
   {
     withCredentials: true,
   });
