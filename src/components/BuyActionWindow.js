@@ -24,7 +24,7 @@ const BuyActionWindow = ({ uid }) => {
       },
   {
     withCredentials: true,
-  });
+  },);
       triggerRefresh();
       closeBuyWindow();
     } catch (err) {
