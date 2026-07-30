@@ -15,8 +15,9 @@ export const UserContextProvider = ({ children }) => {
                 setUser(res.data);
                 setLoading(false);
             })
-            .catch(() => {
-                window.location.href = LOGIN_URL;
+            .catch((err) => {
+                console.log(err.response);
+                alert(err.response?.status);
             });
     }, []);
 
