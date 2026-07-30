@@ -21,8 +21,10 @@ const BuyActionWindow = ({ uid }) => {
         price: Number(stockPrice),
         mode: "BUY",
         product,
-      });
-
+      },
+  {
+    withCredentials: true,
+  },);
       triggerRefresh();
       closeBuyWindow();
     } catch (err) {
